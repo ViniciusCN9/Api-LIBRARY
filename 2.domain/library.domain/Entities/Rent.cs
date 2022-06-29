@@ -3,14 +3,14 @@ using library.domain.Exceptions;
 
 namespace library.domain.Entities
 {
-    public class UserBook
+    public class Rent
     {
         public int UserId { get; private set; }
         public int BookId { get; private set; }
         public DateTime CheckoutDate { get; private set; }
         public DateTime ReturnDate { get; private set; }
 
-        public UserBook(int userId, int bookId)
+        public Rent(int userId, int bookId)
         {
             if (userId <= 0)
                 throw new RequestInvalidException("Usuário inválido");
