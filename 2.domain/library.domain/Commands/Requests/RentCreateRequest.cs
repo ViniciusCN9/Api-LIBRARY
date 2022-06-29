@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace library.domain.Commands.Requests
 {
-    public class RentRequest
+    public class RentCreateRequest
     {
         public int UserId { get; set; }
         public int BookId { get; set; }
